@@ -59,5 +59,11 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xamarinforms\Xamarinforms.Android\Xamarinforms.Android.csproj">
+      <Project>{edd076a2-c70c-4896-b980-3b107a85667a}</Project>
+      <Name>Xamarinforms.Android</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
