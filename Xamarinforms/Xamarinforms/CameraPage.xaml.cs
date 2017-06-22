@@ -28,7 +28,7 @@ namespace Xamarinforms
             {
                 var imageBytes = await photoService.TakePhotoAsync();
                 noseImage.Source = ImageSource.FromUri(new Uri(_nose.Image)); // set source of nose image
-                image.Source = ImageSource.FromStream(() => new MemoryStream(imageBytes));
+                noseImage.Source = ImageSource.FromStream(() => new MemoryStream(imageBytes));
                 imageGrid.IsVisible = true; // set visibility to true
             }
 

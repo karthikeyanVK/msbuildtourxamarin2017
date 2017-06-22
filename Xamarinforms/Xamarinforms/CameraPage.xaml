@@ -10,20 +10,7 @@
             Text="Capture Image" TextColor="White"
             Clicked="captureButton_Clicked"></Button>
         <Grid x:Name="imageGrid" IsVisible="False">
-            <Image x:Name="noseImage"
-        HeightRequest="120"
-        WidthRequest="120"
-        AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize"
-        AbsoluteLayout.LayoutFlags="None">
-
-                <!-- Gesture Recognizers -->
-                <Image.GestureRecognizers>
-                    <PanGestureRecognizer PanUpdated="OnPanUpdated" />
-                    <PinchGestureRecognizer PinchUpdated="OnPinchUpdated" />
-                </Image.GestureRecognizers>
-
-            </Image>
-
+           
             <AbsoluteLayout>
                 <Image x:Name="noseImage"
             HeightRequest="120"
